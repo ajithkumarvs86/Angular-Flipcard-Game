@@ -1,0 +1,11 @@
+p {
+    font-family: Lato;
+  }
+.data{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: inline-flex;
+  margin-top: 15px;
+  padding-left: 3px;
+}

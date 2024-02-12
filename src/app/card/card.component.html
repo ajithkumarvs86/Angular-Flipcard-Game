@@ -1,0 +1,12 @@
+<div class="tp-wrapper">
+	<div class="tp-box" (click)="toggleFlip()" [@flipState]="flip">
+		<div class="tp-box__side tp-box__front">
+      <p style=" margin-top: 30%;" *ngIf="frontText">{{frontText}}</p>
+		</div>
+		<div class="tp-box__side tp-box__back">
+      <ng-container *ngIf="flip === 'active'">
+        <p style=" margin-top: 10%; padding: 10px; line-height: 25px;" *ngIf="backText">{{backText}}</p>
+      </ng-container>
+		</div>
+	</div>
+</div>
